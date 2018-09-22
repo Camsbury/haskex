@@ -21,6 +21,9 @@ library
   exposed-modules:
                   Prelude
                   Haskex
+  other-modules:
+                  Haskex.DataStructure
+                  Haskex.ADT
   default-extensions:
                      DerivingStrategies
                      FlexibleContexts
@@ -28,8 +31,10 @@ library
                      FunctionalDependencies
                      NoImplicitPrelude
                      OverloadedStrings
+                     OverloadedLists
                      ScopedTypeVariables
                      TypeApplications
+                     TupleSections
   build-depends:       base-noprelude >=4.10 && <4.11
                      , classy-prelude
                      , lens
